@@ -51,6 +51,15 @@ Accepts: application/json
 Authorization: Bearer <--token here-->
 ###
 
+POST http://localhost:8080/api/v1/notes
+Accepts: application/json
+Authorization: Bearer <--token here-->
+{
+  "title": "title1",
+  "content": "content1"
+}
+
+
 GET http://localhost:8080/api/v1/name/Bangla
 Accepts: application/json
 Authorization: Bearer <--token here-->

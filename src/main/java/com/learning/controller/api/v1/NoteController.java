@@ -32,6 +32,11 @@ public class NoteController {
         return ResponseEntity.ok().body(note);
     }
 
+/*
+ImmutableMap, comme son nom l'indique, est un type de Map qui est immuable.
+Cela signifie que le contenu de la carte est fixe ou constant après la déclaration, c'est-à-dire qu'il est en lecture seule.
+Si l'on tente d'ajouter, de supprimer ou de mettre à jour des éléments dans la carte, une UnsupportedOperationException est déclenchée.
+*/
     @PostMapping(value = "/v1/notes", produces = "application/json")
     @ApiResponses(value = {
             @ApiResponse(code = 404, message = "Not Found"),

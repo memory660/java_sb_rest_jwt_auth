@@ -6,6 +6,21 @@
 # * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
 
 
+# docker
+
+-> pgadminsbrj
+-> servers -> register -> server
+-> general -> name -> [dbsbrj]
+-> connection
+----> username -> [postgres]
+----> password -> [postgres]
+
+# lancement application
+
+probleme avec la table role
+- au lancement de l'application les tables sont créés à chaque éxecution de l'application
+- parfois data.sql est exécuté parfois pas (le faire manuellement)
+
 ### Sign up
 POST http://localhost:8080/api/auth/signup
 Content-Type: application/json

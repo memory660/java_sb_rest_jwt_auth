@@ -37,6 +37,12 @@ ImmutableMap, comme son nom l'indique, est un type de Map qui est immuable.
 Cela signifie que le contenu de la carte est fixe ou constant après la déclaration, c'est-à-dire qu'il est en lecture seule.
 Si l'on tente d'ajouter, de supprimer ou de mettre à jour des éléments dans la carte, une UnsupportedOperationException est déclenchée.
 */
+/*
+Le Map.of renvoie une Map non modifiable.
+Nous devons passer des paires de clés et de valeurs.
+Le nombre de paires de clés et de valeurs qui peuvent être transmises est compris entre 0 et 10.
+Trouvez la signature de la méthode Map.of pour certaines paires de clés et de valeurs.
+*/
     @PostMapping(value = "/v1/notes", produces = "application/json")
     @ApiResponses(value = {
             @ApiResponse(code = 404, message = "Not Found"),
